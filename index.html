@@ -9,9 +9,6 @@
 	<img id="image" />
 	<script type="text/javascript">
 	<!--
-	 var imlocation = "assets/img/";
-	 var currentdate = 0;
-	 var image_number = 0;
 	 function ImageArray (n) {
 	   this.length = n;
 	   for (var i =1; i <= n; i++) {
@@ -19,13 +16,15 @@
 	   }
 	 }
 	 image = new ImageArray(4)
-	 image[0] = 'rabbit1.jpg'
-	 image[1] = 'rabbit2.jpg'
-	 image[2] = 'rabbit3.jpg'
-         image[3] = 'rabbit4.jpg'
+	 image[0] = '/assets/img/rabbit1.jpg'
+	 image[1] = '/assets/img/rabbit2.jpg'
+	 image[2] = '/assets/img/rabbit3.jpg'
+    	 image[3] = '/assets/img/rabbit4.jpg'
 	 
 	 document.getElementById('image').src=image[Math.floor(4*Math.random())];
 	//-->
 	</script>
 	</body>
+	<footer>
+	<a href="rabbit2">More rabbits...</a>
 </html>
