@@ -22,11 +22,8 @@
 	 image[1] = 'rabbit2.jpg'
 	 image[2] = 'rabbit3.jpg'
          image[3] = 'rabbit4.jpg'
-	 var rand = 60/image.length
 	 function randomimage() {
-		currentdate = new Date()
-		image_number = currentdate.getSeconds() % 4
-		return(image[image_number])
+		return(image[Math.floor(Math.random*4))])
 	 }
 	 document.write("<img src='" + imlocation + randomimage()+ "'>");
 	//-->
